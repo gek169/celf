@@ -124,6 +124,8 @@ void celf_make_ro(void* blk, size_t sz){
 */
 void celf_err(const char* errmsg);
 #ifdef CELF_DEFAULT_ERR
+#include <stdio.h>
+#include <stdlib.h>
 void celf_err(const char* errmsg){
 	puts(errmsg);
 	abort();
